@@ -26,11 +26,15 @@ In your project's Gruntfile, add a section named `jekyll_post` to the data objec
 grunt.initConfig({
   jekyll_post: {
     options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
+      questions: [
+        {
+          config: 'title',
+          message: 'What would you like the title to be?',
+          default: 'My Default Title'
+        }
+
+      ]
+    }
   },
 });
 ```
