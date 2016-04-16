@@ -1,7 +1,7 @@
 {
   "name": "grunt-jekyll-post",
   "description": "Prompts questions in command line, then creates a Jekyll post template with the answers.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/JasonEtco/grunt-jekyll-post",
   "author": {
     "name": "JasonEtco",
@@ -42,6 +42,7 @@
     "template",
     "front-matter",
     "prompt",
+    "inquirer",
     "console",
     "terminal",
     "command line",
