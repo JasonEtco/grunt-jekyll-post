@@ -119,4 +119,5 @@ grunt.initConfig({
 ```
 
 ## Release History
+* __0.1.1__ - 15 April 2016 - Removed some unnecessary dependencies
 * __0.1.0__ - 15 April 2016 - First version
