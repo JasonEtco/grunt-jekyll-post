@@ -32,7 +32,6 @@ grunt.initConfig({
           message: 'What would you like the title to be?',
           default: 'My Default Title'
         }
-
       ]
     }
   },
@@ -45,8 +44,8 @@ grunt.initConfig({
 Type: `Boolean`
 Default value: `true`
 
-Define whether to write the output file into "_drafts" or "_posts"
-_writes to _drafts by default_
+Define whether to write the output file into `_drafts` or `_posts`  
+_writes to `_drafts` by default_
 
 ### Question Options
 
