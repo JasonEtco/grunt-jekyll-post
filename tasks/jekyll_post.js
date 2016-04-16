@@ -69,6 +69,8 @@ module.exports = function(grunt) {
                 } else {
                     grunt.fail.warn("Your Gruntfile's jekyll_post task needs a `title` question.");
                 }
+
+                done();
             });
         }   
     });
