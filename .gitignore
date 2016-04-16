@@ -1,0 +1,17 @@
+# Misc files
+# ----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+*.map
+*.esproj
+*.sublime-workspace
+*.sublime-project
+logs/*
+
+# Dev files
+# ----------------------------------------------------------------------
+*.sass-cache/
+node_modules/
