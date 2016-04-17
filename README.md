@@ -122,6 +122,7 @@ grunt.initConfig({
 ```
 
 ## Release History
+* __0.1.3__ - 17 April 2016 - Fixed up the docs
 * __0.1.2__ - 15 April 2016 - Task now finishes properly
 * __0.1.1__ - 15 April 2016 - Removed some unnecessary dependencies
 * __0.1.0__ - 15 April 2016 - First version
