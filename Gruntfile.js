@@ -24,21 +24,25 @@ module.exports = function(grunt) {
 
     jekyll_post: {
       options: {
-        questions: [
-          {
-            config: 'title',
-            message: 'Title?',
-            default: 'Your Default Title'
-          },
-          {
-            config: 'author',
-            type: 'list',
-            message: 'Author?',
-            default: 'Your Default Author',
-            choices: ['Jason', 'Daniel']
-          }
+        comment: [
+          'single comment',
+          'anotha one'
         ]
-      }
+      },
+      questions: [
+        {
+          config: 'title',
+          message: 'Title?',
+          default: 'Your Default Title'
+        },
+        {
+          config: 'author',
+          type: 'list',
+          message: 'Author?',
+          choices: ['Jason', 'Daniel'],
+          default: 1
+        }
+      ]
     }
   });
 
