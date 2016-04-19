@@ -39,20 +39,20 @@ grunt.initConfig({
 ### Options
 
 #### dist
-Type: `String`
+Type: `String`  
 Default value: `_drafts`
 
 The folder to which the output file will be written.
 
 #### format
-Type: `String`
+Type: `String`  
 Default value: `md`
 
 The file format of the output file. Usually 'md' or 'markdown'.  
-_Write just the extension, without the ._
+_Write just the extension, without the period_
 
 #### date
-Type: `Boolean`
+Type: `Boolean`  
 Default value: `false`
 
 Include the current date in the output file's front-matter.
@@ -136,7 +136,27 @@ The message that you want to see in the command line, prompting you to answer th
 #### default
 Type: `String/Array/Boolan`
 
-The default value used when the user just hits enter without typing anything into it.
+The default value used when the user just hits enter without typing anything into it.  
+For `list` and `checkbox` questions, `default` will have to be the index for the default choice.  
+Example (the `default` will be Jason):
+
+```js
+jekyll_post: {
+  questions: [
+    {
+      config: 'title',
+      message: 'Title?',
+      default: 'Your Default Title'
+    },
+    {
+      config: 'author',
+      message: 'Pick an author',
+      choices: ['Jason', 'Daniel'],
+      default: 0
+    }
+  ]
+}
+```
 
 #### choices
 _only for questions that have the type `list` or `checkbox`_  
