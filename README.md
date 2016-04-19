@@ -38,12 +38,64 @@ grunt.initConfig({
 
 ### Options
 
-#### drafts
-Type: `Boolean`
-Default value: `true`
+#### dist
+Type: `String`
+Default value: `_drafts`
 
-Define whether to write the output file into `_drafts` or `_posts`  
-_writes to `_drafts` by default_
+The folder to which the output file will be written.
+
+#### format
+Type: `String`
+Default value: `md`
+
+The file format of the output file. Usually 'md' or 'markdown'.  
+_Write just the extension, without the ._
+
+#### date
+Type: `Boolean`
+Default value: `false`
+
+Include the current date in the output file's front-matter.
+
+#### comments
+Type: `String` or `Object`
+
+Write a comment that will appear in the output file's front-matter, below any other content.  
+Example:
+
+```js
+jekyll_post: {
+  options: {
+    comment: [
+      'single comment',
+      'anotha one'
+    ]
+  },
+  questions: [
+    {
+      config: 'title',
+      message: 'Title?',
+      default: 'Your Default Title'
+    }
+  ]
+}
+```
+You can also use a single line comment:  
+
+```js
+jekyll_post: {
+  options: {
+    comment: 'single comment'
+  },
+  questions: [
+    {
+      config: 'title',
+      message: 'Title?',
+      default: 'Your Default Title'
+    }
+  ]
+}
+```
 
 ### Question Options
 
@@ -102,7 +154,8 @@ Add as many questions as you need, and they will be reflected in the output mark
 grunt.initConfig({
   jekyll_post: {
     option: {
-      drafts: false
+      dist: '_post',
+      format: 'markdown'
     },
     questions: [
       {
