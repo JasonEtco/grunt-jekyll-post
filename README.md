@@ -115,7 +115,7 @@ title: ANSWER
 ```
 
 #### type
-Type: `String`
+Type: `String`  
 Default value: input
 
 The type of question you're asking:
@@ -134,7 +134,7 @@ Type: `String`
 The message that you want to see in the command line, prompting you to answer the question.
 
 #### default
-Type `String/Array/Boolan`
+Type: `String/Array/Boolan`
 
 The default value used when the user just hits enter without typing anything into it.
 
